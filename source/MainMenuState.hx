@@ -100,6 +100,12 @@ class MainMenuState extends MusicBeatState
 		magenta.color = 0xFFfd719b;
 		add(magenta);
 		
+		var splash:FlxSprite = new FlxSprite(0,0).loadGraphic(Paths.image('SplashMenu/Splash'));
+		splash.scrollFactor.set(0, 0);
+		splash.setGraphicSize(Std.int(splash.width * 1));
+		splash.antialiasing = ClientPrefs.globalAntialiasing;
+		add(splash);
+		
 		// magenta.scrollFactor.set();
 
 		menuItems = new FlxTypedGroup<FlxSprite>();
@@ -122,6 +128,7 @@ class MainMenuState extends MusicBeatState
 			menuItem.animation.play('idle');
 			menuItem.ID = i;
 			//menuItem.screenCenter(X);
+			menuItem.x = 100;
 			menuItems.add(menuItem);
 			var scr:Float = (optionShit.length - 4) * 0.135;
 			if(optionShit.length < 6) scr = 0;
