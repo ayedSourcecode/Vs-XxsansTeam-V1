@@ -39,8 +39,8 @@ class MainMenuState extends MusicBeatState
 		//#if MODS_ALLOWED 'mods', #end
 		//#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
-		'Youtube',
-		'Discord',
+		'Youtube', #end
+		'Discord', #end
 		//#if !switch 'donate', #end
 		'options'
 	];
