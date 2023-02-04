@@ -39,8 +39,9 @@ class MainMenuState extends MusicBeatState
 		//#if MODS_ALLOWED 'mods', #end
 		//#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
-		#if !switch 'Youtube', #end
-		#if !switch 'Discord', #end
+		'Youtube',
+		'Discord',
+		//'Gallery',
 		//#if !switch 'donate', #end
 		'options'
 	];
@@ -264,6 +265,8 @@ class MainMenuState extends MusicBeatState
 									#end
 									case 'awards':
 										MusicBeatState.switchState(new AchievementsMenuState());
+									//case 'Gallery':
+										//MusicBeatState.switchState(new GalleryState());
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
