@@ -45,7 +45,7 @@ class CreditsState extends MusicBeatState
 		#end
 
 		persistentUpdate = true;
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		bg = new FlxSprite().loadGraphic(Paths.image('menuCredits'));
 		add(bg);
 		bg.screenCenter();
 		
@@ -83,6 +83,9 @@ class CreditsState extends MusicBeatState
 		var pisspoop:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
 			['Vs XxSansTeam'],
 			['Xxsussy Baka', 'Xxsussy', 'Owner', 'https://www.youtube.com/@xxsansteamfell9378/videos', '3498DB'],
+			['Asypryo', 'Asypryo', 'Character and Chromatic', 'https://www.youtube.com/channel/UC_g6bbr9PoIGGalD4Cv5RwA', '5DADE2'],
+			['ayedFNFmaker', 'ayed', 'Coding source code and song', 'https://www.youtube.com/channel/UCmrEN0MKh8u8pEq5Ig8WB3g', '40E0D0'],
+			[''],
 			['Psych Engine Team'],
 			['Shadow Mario',		'shadowmario',		'Main Programmer of Psych Engine',								'https://twitter.com/Shadow_Mario_',	'444444'],
 			['RiverOaken',			'river',			'Main Artist/Animator of Psych Engine',							'https://twitter.com/RiverOaken',		'B42F71'],
