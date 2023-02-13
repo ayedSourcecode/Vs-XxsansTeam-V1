@@ -26,6 +26,7 @@ class AboutsState extends MainMenuState
         add(Abouts);
 
         Back = new FlxButton(0, 50, "Back", ClickBack);
+	Back.color = 0xFF2F00FF;
         // Back.size = 32;
         add(Back);
         
