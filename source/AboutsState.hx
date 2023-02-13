@@ -4,7 +4,7 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.text.FlxText;
 import flixel.ui.FlxButton;
-import flixel.unit.FlxColor;
+import flixel.util.FlxColor;
 
 class AboutsState extends MainMenuState
 {
@@ -34,7 +34,7 @@ class AboutsState extends MainMenuState
 
     private function ClickBack()
     {
-        FlxG.camera.fade(FlxColor.BLACK, 0.33, false, () -> {
+        FlxG.camera.fade(FlxColor.PINK, 0.33, false, () -> {
             FlxG.sound.play(Paths.sound('cancelMenu'));
             FlxG.switchState(new MainMenuState());
         });
