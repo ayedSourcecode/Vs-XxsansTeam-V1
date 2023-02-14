@@ -15,6 +15,7 @@ import flixel.text.FlxText;
 import flixel.math.FlxMath;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
+import flixel.ui.FlxButton;
 import flixel.util.FlxColor;
 import lime.app.Application;
 import Achievements;
@@ -51,6 +52,7 @@ class MainMenuState extends MusicBeatState
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
 	var debugKeys:Array<FlxKey>;
+	var StopMusic:FlxButton;
 
 	override function create()
 	{
@@ -107,6 +109,11 @@ class MainMenuState extends MusicBeatState
 		splash.setGraphicSize(Std.int(splash.width * 1));
 		splash.antialiasing = ClientPrefs.globalAntialiasing;
 		add(splash);
+		
+		StopMusic = new FlxButton(100, 0, "StopMusicFreakymenu", ClickStopMusic);
+		StopMusic.color = 
+		// StopMusic.Size = 32;
+		add(StopMusic);
 		
 		// magenta.scrollFactor.set();
 
@@ -173,6 +180,11 @@ class MainMenuState extends MusicBeatState
 		#end
 
 		super.create();
+	}
+	
+	public function ClickStopMusic()
+	{
+		FlxG.sound.music.stop();
 	}
 
 	#if ACHIEVEMENTS_ALLOWED
