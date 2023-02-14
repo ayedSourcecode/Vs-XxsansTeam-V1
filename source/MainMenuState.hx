@@ -71,6 +71,7 @@ class MainMenuState extends MusicBeatState
 		camAchievement = new FlxCamera();
 		camAchievement.bgColor.alpha = 0;
 
+		FlxG.mouse.visible = true;
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camAchievement, false);
 		FlxG.cameras.setDefaultDrawTarget(camGame, true);
