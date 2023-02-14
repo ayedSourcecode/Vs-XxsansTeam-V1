@@ -111,7 +111,7 @@ class MainMenuState extends MusicBeatState
 		add(splash);
 		
 		StopMusic = new FlxButton(100, 0, "StopMusicFreakymenu", ClickStopMusic);
-		StopMusic.color = 
+		StopMusic.color = 0xFFFFED4D;
 		// StopMusic.Size = 32;
 		add(StopMusic);
 		
